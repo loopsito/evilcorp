@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Sora', sans-serif;
+    box-sizing: border-box;
+    line-height: 1.4;
+
+}   
+    /* background effect */
+
+.div__blur {
+    background-image: url("../src/office.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%; 
+    position: absolute;
+    filter: blur(3px);
+}
+.div__container {
+    width: 100%;
+    position: absolute;
+    z-index: 20;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+.header__img {
+    padding-left: 2rem;
+    width: 150px;
+    height: 150px;
+}
+.header__toggle {
+    display: none;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1;
+}
+
+.toggle__container {
+    display: none;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+}
+
+
+.toggle__container .toggler {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.toggle__container .toggler:checked ~ .toggle__menu {
+    visibility: visible;
+}
+
+.toggle__menu {
+    background-color: #FFF;
+    display: flex;
+    visibility: hidden;
+    flex-direction: column;
+    height: 100%; 
+      
+}
+.toggle__lang {
+    padding: 1rem 1rem;
+    background-color: #0A807A;
+    color: #FFF;
+    margin-top: 6.5rem;
+}
+.toggle__ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+.toggle__ul-li {
+    margin-top: 2rem;
+}
+.toggle__rrss {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+.toggle__rrss > img {
+    max-width:50px ;
+    max-height:50px ;
+    
+}
+.header-nav{
+    margin: auto 3rem;
+    display: inline;
+}
+
+.header-nav-list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.header-nav-list-item {
+    font-size: 1.2rem;
+    margin: 1rem;
+}
+
+.header-nav-list-item > a {
+    color: #ED0E19;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 80vh;
+}
+
+.main-h1 {
+    color: #ED0E19;
+    font-size: 4rem;
+    margin: 5rem 2rem 3rem;    
+}
+
+p > a {
+    color: white;
+    background-color:#59A9A5;
+    padding: .3rem;
+    margin-left: 3px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+li > a {
+    text-decoration: none;
+    color: #000;
+}
+
+h1 {
+    animation-duration: 3s;
+    animation-name: h1Animate;
+  }
+
+@keyframes h1Animate {
+    from {
+      margin-left: 30%;
+      width: 50%
+    }
+  
+    to {
+      margin-left: 2rem;
+      width: 50%;
+    }
+  }
+
+.main-div {
+    display: flex;
+    width: 150px;
+    height: 40px;
+    background: #0a807a9f;
+    border: none;
+    margin-left: 17rem;
+    align-items: center;
+    justify-content: center;
+    transition: background 3s, height 1s;
+}
+
+.main-div:hover {
+    background: #0A807A;
+    height: 42px;
+}
+
+.main-div-a {
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 900;
+    text-decoration: none;
+}
+.main-div-a:hover {
+    font-size: 1.3rem;
+    transition: font-size 3s;
+}
+
+
+    /* Media queries */
+
+
+@media (max-width: 420px) {
+    .header {
+        display: flex;
+        align-items: flex-end;
+    }
+    .header__img {
+        width: 80px;
+        height: 80px;
+        padding: 0;
+        position: relative;
+        top: .5rem;
+        left: 1rem;
+    }
+    .header__toggle {
+        display: block;
+    }
+    .toggle__container {
+        display: block;
+    } 
+
+    .header-nav{
+        display: none;
+    }
+
+    .main-div {
+        margin-left: auto;
+        margin-right: 2rem;
+    }
+
+    .main-h1 {
+        color: #ED0E19;
+        font-size: 2.5rem;
+        margin: 5rem 1rem 2rem;    
+    }
+
+    @keyframes h1Animate {
+        from {
+          margin-left: 10%;
+          width: 50%
+        }
+      
+        to {
+          margin-left: 1rem;
+          width: 50%;
+        }
+      }  
+
+  }
+
+

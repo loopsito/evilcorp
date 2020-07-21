@@ -1,0 +1,10 @@
+<svg id="Logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="142" height="114" viewBox="0 0 142 114">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.323" cy="0.267" r="0.867" gradientTransform="translate(0.496 0.649) rotate(-153.754)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#38807c"/>
+      <stop offset="1" stop-color="#1c403e"/>
+    </radialGradient>
+  </defs>
+  <circle id="Circulo_Logo" data-name="Circulo Logo" cx="57" cy="57" r="57" fill="url(#radial-gradient)"/>
+  <text id="Ecorp" transform="translate(75 70)" fill="#ed0e19" font-size="50" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="-66.04" y="0">Ecorp</tspan></text>
+</svg>
