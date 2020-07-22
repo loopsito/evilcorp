@@ -141,6 +141,7 @@ h1 {
 .toggle__container .toggler:checked ~ .toggle__menu > div {
     transition-duration: 0.75s;
     background-color: white;
+    height: 100%;
 }
 
 .toggle__lang {
