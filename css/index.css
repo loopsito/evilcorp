@@ -40,20 +40,20 @@ h1 {
 .div__container {
     width: 100%;
     position: absolute;
-    z-index: 30;
+    z-index: 40;
 }
 .toggle__container {
     display: none;
-    position: fixed;
+    position: absolute;
     height: 100vh;
     width: 100%;
 }
 .header__toggle {
     display: none;
-    position: fixed;
+    position: relative;
     top: 1rem;
     right: 1rem;
-    z-index: 10;
+    z-index: 20;
 }
 
 .toggle__menu {
@@ -68,7 +68,7 @@ h1 {
     position: absolute;
     top: 1rem;
     right: 1rem;
-    z-index: 20;
+    z-index: 40;
     width: 50px;
     height: 50px;
     cursor: pointer;
@@ -81,7 +81,7 @@ h1 {
     width: 60px;
     height: 60px;
     padding: .5rem;
-    z-index: 10;
+    z-index: 30;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -107,7 +107,7 @@ h1 {
 .toggle__container .header__toggle > div::after {
     content: '';
     position: absolute;
-    z-index: 1;
+    z-index: 10;
     top: -10px;
     width: 100%;
     height: 4px;
@@ -160,7 +160,7 @@ h1 {
     margin-bottom: 2rem;
 }
 .toggle__ul-li {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
 }
 .toggle__ul-li .sesion {
     color: #0A807A;
@@ -169,8 +169,8 @@ h1 {
     width: 100%;
 }
 .toggle__rrss {
-    margin-top: 2rem;
     display: flex;
+    padding-bottom: 1rem;
     justify-content: center;
 }
 .toggle__rrss > a {
